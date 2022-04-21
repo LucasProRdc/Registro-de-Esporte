@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<table class="table table-success table-striped">
+    <thead>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Esporte</th>
+            </tr>
+        </thead>
+    </thead>
+    <tbody>
+    {% for registro in registros %}
+        <tr>
+            <td>{{ registro.nome }}</td>
+            <td>{{ registro.idade }}</td>
+            <td>{{ registro.esporte }}</td>
+        </tr>  
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
